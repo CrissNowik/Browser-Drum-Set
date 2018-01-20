@@ -1,0 +1,48 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin mobi_devices_width {
+  @media screen and (max-width: 1024px){
+    .row {
+      height: 70%;
+    }
+    .drum {
+      width: 33%;
+      height: 33%;
+      margin: auto;
+    }
+  }
+}
+
+@mixin mobi_devices_height {
+  @media screen and (max-height:361px){
+    .header {
+      h1{
+        font-size: 2.5rem;
+        padding: 20px;
+      }
+    }
+    .row {
+      height: 80%;
+    }
+    .drum {
+      p {
+        font-size: 2rem;
+      }
+      span {
+        font-size: 0.5rem;
+      }
+    }
+  }
+}

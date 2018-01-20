@@ -1,0 +1,61 @@
+@import "mixins";
+
+* {
+  @include reset;
+}
+
+body {
+  background-color: #000;
+}
+
+.header {
+  text-align: center;
+  h1{
+    color: #fff;
+    font-size: 4rem;
+    padding: 20px;
+  }
+}
+
+.main {
+  height: 100vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @include center;
+}
+
+.row {
+  height: 20%;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @include center;
+}
+
+.drum {
+  height: 100%;
+  width: 10%;
+  padding: 20px;
+  margin: auto;
+  flex-direction: column;
+  border: 5px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.08s;
+  @include center;
+  p {
+    font-size: 3rem;
+  }
+  span {
+    font-size: 1rem;
+    color: #e5f902;
+  }
+}
+
+.play {
+  transform: scale(1.1);
+  border-color: #e5f902;
+}
+/*endpoints*/
+@include mobi_devices_width;
+@include mobi_devices_height;
