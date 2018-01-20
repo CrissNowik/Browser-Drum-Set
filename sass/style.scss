@@ -56,6 +56,19 @@ body {
   transform: scale(1.1);
   border-color: #e5f902;
 }
+
+footer {
+  text-align: center;
+  p {
+    font-size: 0.7rem;
+    color: #fff;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+  }
+}
 /*endpoints*/
 @include mobi_devices_width;
 @include mobi_devices_height;
