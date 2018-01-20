@@ -10,11 +10,10 @@ You can play it by mouse or keyboard, also tapping screen of your mobile device.
 - Java Script (core feature),
 - ES6 standard (ex. interpolations)
 
-
 ### If you want to develop this app:
 1. *In console* - clone repository by ```git clone [repository URL]```
-2. *In console* - use ready package.json and install needed dependencies by ```npm install```
-3. Wait a few minutes ;-) 
+2. *In console* - use ready package.json file and install needed dependencies by ```npm install```
+3. Wait a moment ;-) 
 4. Ready to work? *In console* - use commands ```gulp sass``` and ```gulp watch```
 5. Have fun! 
 
